@@ -17,3 +17,8 @@ The Faithful 32x32 texture pack was used to create the following blocks:
 
 The Faithful 32x32 texture pack can be found here:
 > http://www.minecraftforum.net/forums/mapping-and-modding/resource-packs/1223254-faithful-32x32-pack-update-red-cat-clay-1-8
+
+## Credits
+Thanks to zerofall for EZStorage. It is proving to be an excellent base for mod writing newbies.
+EZStorage source: https://github.com/zerofall/EZStorage
+EZStorage cursefarge: http://minecraft.curseforge.com/projects/ezstorage
