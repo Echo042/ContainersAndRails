@@ -1,0 +1,5 @@
+tile.wood_container_frame.name=Wooden Container Frame
+tile.iron_container_frame.name=Iron Container Frame
+tile.obsidian_container_frame.name=Obsidian Container Frame
+tile.ender_container_frame.name=Ender Container Frame
+itemGroup.CandR=Containers and Rails

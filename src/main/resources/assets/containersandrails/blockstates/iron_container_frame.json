@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "containersandrails:iron_container_frame" }
+  }
+}

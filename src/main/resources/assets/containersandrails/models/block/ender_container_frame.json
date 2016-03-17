@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "containersandrails:blocks/ender_container_frame"
+  }
+}

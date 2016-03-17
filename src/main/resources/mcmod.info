@@ -1,0 +1,16 @@
+[
+{
+  "modid": "containersandrails",
+  "name": "Containers and Rails",
+  "description": "Adds multiple tiers of multi-block storage containers and a rail based auto-crafting and storage system.",
+  "version": "",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Ech042, ChrisBecke, LordPtolmy"],
+  "credits": "The Forge and FML guys",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

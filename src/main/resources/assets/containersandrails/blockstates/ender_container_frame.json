@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "containersandrails:ender_container_frame" }
+  }
+}
