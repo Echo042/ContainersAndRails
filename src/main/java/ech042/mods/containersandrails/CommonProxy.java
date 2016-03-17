@@ -1,6 +1,5 @@
 package ech042.mods.containersandrails;
 
-import ech042.mods.containersandrails.init.ContainersBlocks;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;

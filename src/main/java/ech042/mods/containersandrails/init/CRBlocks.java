@@ -1,7 +1,7 @@
 package ech042.mods.containersandrails.init;
 
 import ech042.mods.containersandrails.ContainersAndRails;
-import ech042.mods.containersandrails.block.ContainerBlock;
+import ech042.mods.containersandrails.block.CRBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
@@ -13,7 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
-public class ContainersBlocks
+public class CRBlocks
 {
    public static Block wood_container_frame;
    public static Block iron_container_frame;
@@ -22,10 +22,10 @@ public class ContainersBlocks
 
    public static void init()
    {
-      wood_container_frame = new ContainerBlock("wood_container_frame", Material.wood);
-      iron_container_frame = new ContainerBlock("iron_container_frame", Material.iron);
-      obsidian_container_frame = new ContainerBlock("obsidian_container_frame", Material.iron);
-      ender_container_frame = new ContainerBlock("ender_container_frame", Material.iron);
+      wood_container_frame = new CRBlock("wood_container_frame", Material.wood);
+      iron_container_frame = new CRBlock("iron_container_frame", Material.iron);
+      obsidian_container_frame = new CRBlock("obsidian_container_frame", Material.iron);
+      ender_container_frame = new CRBlock("ender_container_frame", Material.iron);
    }
 
    public static void register()

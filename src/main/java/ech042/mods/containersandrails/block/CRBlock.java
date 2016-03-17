@@ -4,9 +4,9 @@ import ech042.mods.containersandrails.ContainersAndRails;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class ContainerBlock extends Block
+public class CRBlock extends Block
 {
-   public ContainerBlock(String name, Material materialIn)
+   public CRBlock(String name, Material materialIn)
    {
       super(materialIn);
 

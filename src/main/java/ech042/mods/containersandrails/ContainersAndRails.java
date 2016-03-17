@@ -1,6 +1,7 @@
 package ech042.mods.containersandrails;
 
-import ech042.mods.containersandrails.init.ContainersBlocks;
+import ech042.mods.containersandrails.init.CRBlocks;
+import ech042.mods.containersandrails.init.CRItems;
 import ech042.mods.containersandrails.utility.LogHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -15,6 +16,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class ContainersAndRails
 {
    // Static variables relating for the mod
+   public static final String MODID = "containersandrails";
    public static final String MODNAME = "Containers and Rails";
    public static final String VERSIONMAJOR = "0";
    public static final String VERSIONMINOR = "1";
@@ -27,7 +29,6 @@ public class ContainersAndRails
    @SidedProxy(clientSide = ContainersAndRails.CLIENT_PROXY, serverSide = ContainersAndRails.COMMON_PROXY)
    public static CommonProxy proxy;
 
-   public static final String MODID = "containersandrails";
    @Instance(ContainersAndRails.MODID)
    public static ContainersAndRails instance;
 
@@ -40,9 +41,15 @@ public class ContainersAndRails
 
       this.creativeTab = new ContainersAndRailsTab();
 
-      ContainersBlocks.init();
-      ContainersBlocks.register();
-      ContainersBlocks.registerRecipes();
+      // Initialise and register items
+      CRItems.init();
+      CRItems.register();
+      CRItems.registerRecipes();
+
+      // Initialise and register blocks
+      CRBlocks.init();
+      CRBlocks.register();
+      CRBlocks.registerRecipes();
    }
 
    @EventHandler

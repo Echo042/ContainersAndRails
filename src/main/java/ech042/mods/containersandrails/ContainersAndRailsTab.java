@@ -1,6 +1,6 @@
 package ech042.mods.containersandrails;
 
-import ech042.mods.containersandrails.init.ContainersBlocks;
+import ech042.mods.containersandrails.init.CRBlocks;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.relauncher.Side;
@@ -17,6 +17,6 @@ public class ContainersAndRailsTab extends CreativeTabs
    @SideOnly(Side.CLIENT)
    public Item getTabIconItem()
    {
-      return Item.getItemFromBlock(ContainersBlocks.wood_container_frame);
+      return Item.getItemFromBlock(CRBlocks.wood_container_frame);
    }
 }

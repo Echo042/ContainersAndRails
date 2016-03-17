@@ -1,7 +1,8 @@
 package ech042.mods.containersandrails.client;
 
 import ech042.mods.containersandrails.CommonProxy;
-import ech042.mods.containersandrails.init.ContainersBlocks;
+import ech042.mods.containersandrails.init.CRBlocks;
+import ech042.mods.containersandrails.init.CRItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;
@@ -14,7 +15,8 @@ public class ClientProxy extends CommonProxy
    public void registerRenderInformation()
    {
       // do some stuff here
-      ContainersBlocks.registerRenders();
+      CRItems.registerRenders();
+      CRBlocks.registerRenders();
    }
 
    @Override
