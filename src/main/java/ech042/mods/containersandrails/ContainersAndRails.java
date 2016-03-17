@@ -2,8 +2,6 @@ package ech042.mods.containersandrails;
 
 import ech042.mods.containersandrails.init.ContainersBlocks;
 import ech042.mods.containersandrails.utility.LogHelper;
-import ech042.mods.containersandrails.utility.Reference;
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -13,13 +11,24 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 
-@Mod(modid = Reference.MODID, version = Reference.VERSIONFINAL)
+@Mod(modid = ContainersAndRails.MODID, version = ContainersAndRails.VERSIONFINAL)
 public class ContainersAndRails
 {
-   @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.COMMON_PROXY)
+   // Static variables relating for the mod
+   public static final String MODNAME = "Containers and Rails";
+   public static final String VERSIONMAJOR = "0";
+   public static final String VERSIONMINOR = "1";
+   public static final String VERSIONBUILD = "a";
+   public static final String VERSIONFINAL = VERSIONMAJOR + "." + VERSIONMINOR + VERSIONBUILD;
+
+   public static final String COMMON_PROXY = "ech042.mods.containersandrails.CommonProxy";
+   public static final String CLIENT_PROXY = "ech042.mods.containersandrails.client.ClientProxy";
+
+   @SidedProxy(clientSide = ContainersAndRails.CLIENT_PROXY, serverSide = ContainersAndRails.COMMON_PROXY)
    public static CommonProxy proxy;
 
-   @Instance(Reference.MODID)
+   public static final String MODID = "containersandrails";
+   @Instance(ContainersAndRails.MODID)
    public static ContainersAndRails instance;
 
    public ContainersAndRailsTab creativeTab;

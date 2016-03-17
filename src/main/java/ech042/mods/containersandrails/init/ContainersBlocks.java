@@ -1,7 +1,7 @@
 package ech042.mods.containersandrails.init;
 
+import ech042.mods.containersandrails.ContainersAndRails;
 import ech042.mods.containersandrails.block.ContainerBlock;
-import ech042.mods.containersandrails.utility.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
@@ -47,7 +47,7 @@ public class ContainersBlocks
    public static void registerRender(Block block)
    {
       Item item = Item.getItemFromBlock(block);
-      Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+      Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(ContainersAndRails.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
    }
 
    public static void registerRecipes()

@@ -1,6 +1,6 @@
 package ech042.mods.containersandrails.utility;
 
-import ech042.mods.containersandrails.utility.Reference;
+import ech042.mods.containersandrails.ContainersAndRails;
 import net.minecraftforge.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 
@@ -11,7 +11,7 @@ public class LogHelper
 {
    public static void log(Level logLevel, Object object)
    {
-      FMLLog.log(Reference.MODNAME, logLevel, String.valueOf(object));
+      FMLLog.log(ContainersAndRails.MODNAME, logLevel, String.valueOf(object));
    }
 
    public static void all(Object object) { log(Level.ALL, object); }
